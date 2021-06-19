@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Très bonne ODD, bonne documentation, bonne personnalisation -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"
+   xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Édition numérique du roman historique <hi rend="italic">Latréaumont</hi> d'Eugène
+               Sue d'après une publication de 1859</title>
+            <author>Léa Perissier</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Édition encodée par Léa Perissier, d'après Eugène Sue, Latréaumont, Paris, Bureaux du
+               Siècle, 1859, 118 pages.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Derived from an analysis of 1 files in file:/C:/Documents/TNAH/2409/evaluation/</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1>
+            <head>Guide d'encodage de l'édition numérique d'après Eugène Sue, <hi>Latréaumont</hi>,
+               Paris, Bureaux du Siècle, 1859, 118 pages</head>
+            <p>Ce guide a pour but de permettre au lecteur de connaître les règles d'encodage
+               XML-TEI suivies pour cette édition en explicitant le choix des éléments.</p>
+            <p>Avant cela, il s'agit d'introduire l'édition à l'origine de notre encodage. Cette
+               édition source est une publication du roman historique d'Eugène Sue, <hi
+                  rend="italic">Latréaumont</hi>, datée de 1859 et disponible en ligne sur Gallica.
+               Nous nous consacrerons seulement à un extrait de cette édition, particulièrement les
+               pages 4 à 6. Écrivain et député français, l'oeuvre littératire d'Eugène Sue est
+               principalement connue pour ses romans-feuilletons. De fait, la première publication
+               de <hi rend="italic">Latréaumont</hi> revêt cette forme au sein de la <hi
+                  rend="italic">Revue des deux Mondes</hi>. Publié pour la première fois en 1838, le
+               roman rencontre une certaine popularité puisqu'une adaptation théâtrale est créée en
+               1840 et que plusieurs éditions sont recensées dans la seconde moitié du XIXe siècle.
+               Ce roman historique évoque un épisode précis de l'histoire : celui du complot de
+               Latréaumont à l'encontre du roi de France Louis XIV en 1674. Ayant pour visée
+               l'instauration d'une république en France, ce complot échoue et ses membres furent
+               exécutés. Le complot tire son nom de celui qui l'aurait provoqué, Gilles Duhamel de
+               Latréaumont, un noble français.</p>
+            <p>L'édition numérique de cette oeuvre devait répondre à plusieurs objectifs. Tout
+               d'abord, le texte originel de 1859 devait être nettoyé de ses coquilles. Ensuite,
+               l'encodage devait respecter la mise en page de l'édition source ainsi que la
+               structuration du texte originel. Les informations concernant l'édition d'origine
+               devait être renseignées en détail. Enfin, le référencement des noms des personnages
+               et des lieux devait être ajouté sur l'ensemble de notre extrait.</p>
+            <p>Ce dernier objectif nous amène à la question des futures exploitations de notre
+               édition. Une première proposition découle d'un constat : l'oubli du roman aujourd'hui
+               pour le grand public. Ainsi, notre future édition pourrait avoir comme ligne
+               directrice son accessibilité afin de susciter l'intérêt du plus grand nombre. De ce
+               fait, une utilisation probable de notre édition serait sa transformation en format
+               EPUB. En effet, mettre à disposition notre édition sous la forme d'un ebook
+               permettrait à ce roman de trouver un nouveau public et pourrait toucher, par exemple,
+               tous les amateurs de liseuses. Dans cette édition, un index des personnages et des
+               lieux pourrait être ajouté grâce aux référencements effectués lors de l'encodage.</p>
+            <p>Une autre possibilité d'exploitation de notre édition serait de réfléchir sur la
+               caractéristique historique de ce roman. De ce fait, cette édition pourrait être
+               utilisée dans un but pédagogique à destination d'étudiants ou d'élèves du secondaire.
+               Pour rendre le format plus intéractif, on pourrait imaginer la publication de cette
+               édition via une plateforme web permettant une navigation facilitée dans le roman. Ici
+               aussi, un index des personnages et des lieux pourraient être ajouté afin de rendre la
+               lecture davantage accessible. Des pop-ups pourraient être utilisés pour rajouter des
+               éléments de contexte ou d'explication en précisant ce qui tient de la fiction ou de
+               la réalité historique.</p>
+            <p>Enfin, on pourrait imaginer une dernière exploitation de notre édition à caractère
+               cette fois-ci, davantage scientifique. En effet, lors de sa première édition sous la
+               forme d'un roman, l'ouvrage est accompagné de documents historiques authentiques dont
+               des extraits de lettres de Gilles du Hamel de Latréaumont. Si ces pièces sont
+               numérisées, elles pourraient être rajoutées à notre édition afin d'en faire une
+               édition davantage scientifique avec la visualisation d'archives. Ce rassemblement de
+               documents pourrait être accompagné d'un documentation historique concernant le réel
+               complot de Latréaumont. Ainsi réalisée, cette édition relèverait davantage de la
+               vulgarisation scientifique avec comme source principale, une représentation
+               littéraire.</p>
+            <p>En somme, diverses exploitations de cette édition sont possible considérant ses
+               qualités historiques et la perspective d'une rédécouverte d'un ouvrage presque oublié
+               aujourd'hui par le public.</p>
+            <!-- Bonne exposition des perspectives de réutilisation -->
+            <div2>
+               <head>Structuration du fichier XML</head>
+               <p>La structuration de notre édition suit les règles de la TEI en comportant une
+                  partie consacrée à l'en-tête (<gi>teiHeader</gi>) et une autre pour le texte
+                     (<gi>text</gi>).</p>
+               <div3>
+                  <head>Structuration du teiHeader</head>
+                  <p>L'en-tête de notre édition est composé de deux éléments avec ci-jointes leurs
+                     fonctions respectives : <specList>
+                        <specDesc key="fileDesc"/>
+                        <specDesc key="profileDesc"/>
+                     </specList></p>
+                  <div4>
+                     <head>fileDesc</head>
+                     <p>L'élément <gi>fileDesc</gi> regroupe plusieurs informations sur l'édition
+                        source et l'encodage : <specList>
+                           <specDesc key="titleStmt"/>
+                           <specDesc key="publicationStmt"/>
+                           <specDesc key="sourceDesc"/>
+                        </specList></p>
+                     <p>L'élément <gi>titleStmt</gi> contient des informations sur le titre du
+                        document source et la personne en charge de l'encodage.</p>
+                     <p>L'élément <gi>publicationStmt</gi> signale des informations sur la
+                        publication de l'édition en renseignant la date et l'éditeur commercial.</p>
+                     <p>Dans l'élément <gi>sourceDesc</gi> sont réunies toutes les informations
+                        bibliographiques détaillées dans un sous-élément <gi>biblFull</gi>.</p>
+                  </div4>
+                  <div4>
+                     <head>profileDesc</head>
+                     <p>L'élément <gi>profileDesc</gi> contient des informations sur la langue et la
+                        date de création du document source. Pour cela, les éléments
+                           <gi>langUsage</gi> et <gi>creation</gi> sont utilisés suivant le modèle
+                        suivant :</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <profileDesc>
+                           <langUsage>
+                              <language ident="fr">Français</language>
+                           </langUsage>
+                           <creation>
+                              <date when-iso="1838">1838</date>
+                              <country>France</country>
+                              <lang xml:lang="fr"/>
+                           </creation>
+                        </profileDesc>
+                     </egXML>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Structuration du corps du texte</head>
+                  <p>Afin de respecter la hiérarchie de notre document source, les principaux
+                     éléments pour la structuration de notre corps de texte ont été les suivants : <specList>
+                        <specDesc key="div"/>
+                        <specDesc key="p"/>
+                        <specDesc key="said"/>
+                        <specDesc key="seg"/>
+                     </specList>
+                  </p>
+                  <p>L'élément <gi>div</gi> permet de marquer les différentes sections du texte. La
+                     nature de ces dernières a été renseignée grâce à l'attribut <att>type</att>.
+                     Deux valeurs de cet attribut sont possibles : la première <val>part</val>
+                     désigne les parties du texte et la seconde, <val>chapter</val> désigne les
+                     chapitres. Quant à l'attribut <att>n</att>, il permet de numéroter la
+                     section.</p>
+                  <p>L'élément <gi>p</gi> a été utilisé pour signifier chaque paragraphe dans le
+                     document source.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <div type="part" n="1">
+                        <head>L'HOTEL DES MUSES.</head>
+                        <div type="chapter" n="I">
+                           <head>MAITRE AFFINIUS VAN DEN ENDEN.</head>
+                           <!-- texte -->
+                        </div>
+                     </div>
+                  </egXML>
+                  <p>Afin de représenter les dialogues, l'élément <gi>said</gi> a été privilégié
+                     pour sa richesse d'attributs. En effet, l'attribut <att>who</att> permet de
+                     désigner le locuteur, tandis que l'attribut <att>aloud</att> permet de
+                     signifier s'il s'agit d'un discours à voix haute(<val>true</val>) ou d'une
+                     pensée intérieure du personnage (<val>false</val>).</p>
+                  <p>Enfin, l'élément <gi>seg</gi> indique une segmentation à l'intérieur du texte.
+                     Grâce à son attribut <att>type</att>, la nature du segment est renseignée -
+                     ici, il s'agit d'une incise.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <said who="#Clara-Maria_van_den_Enden" aloud="true">— <persName ref="#Baruch_Spinoza">Spinosa</persName> est à <placeName ref="#Amsterdam">Amsterdam</placeName> ? <seg type="incise">— dit-elle sans que sa phy-<lb/>
+                        sionomie de marbre changeât d'expression ; </seg>— je le verrai<lb/>
+                        donc avec plaisir, et je tâcherai de me montrer digne<lb/>
+                        d'être écoutée d'un si rare et si bon esprit.</said><lb/>
+                  </egXML>
+               </div3>
+               <div3>
+                  <head>Respect de la mise en page originelle</head>
+                  <p>Comme nous l'avons indiqué plus haut, nous avons souhaité conserver la mise en
+                     page d'origine. Dans ce but, quatre éléments ont été utilisés : <specList>
+                        <specDesc key="pb"/>
+                        <specDesc key="cb"/>
+                        <specDesc key="lb"/>
+                        <specDesc key="hi"/>
+                     </specList></p>
+                  <p>Pour permettre le respect des changements de page, l'élément <gi>pb</gi> a été
+                     utilisé. Joint à l'attribut <att>n</att> et à l'attribut <att>facs</att>, il
+                     permet d'indiquer le numéro de page correspondant au texte ainsi que de
+                     renvoyer un lien vers le document d'origine sur Gallica.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k58105109/f9.item"/>
+                  </egXML>
+                  <p>De même, l'élément <gi>cb</gi> a été utilisé pour respecter l'écriture en
+                     colonne du document source. Afin de renseigner le positionnement de la colonne
+                     sur la page, il a été décidé d'utiliser un attribut <att>n</att> ; considérant
+                     que si la valeur de <att>n</att> est égal à <val>1</val>, la colonne se trouve
+                     à gauche et que si elle est égale à <val>2</val>, la colonne se trouve à droite
+                     suivant l'ordre de lecture. Dans l'exemple qui suit, le texte apparaît à la
+                     page 4 sur la colonne de droite.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k58105109/f9.item"/>
+                     <cb n="2"/>
+                  </egXML>
+                  <p>Par cette structuration en colonne, le choix de l'élément <gi>lb</gi> s'est
+                     imposé pour identifier les sauts de ligne. En effet, le texte comporte un
+                     nombre important de césures. Considérant que nous avons choisi de respecter la
+                     mise en page du texte, ces césures devenaient ambiguë : représentent-elles un
+                     mot composé ou une réelle césure ? Pour éviter toutes erreurs lors de la mise
+                     en page de notre édition, nous avons préféré utiliser l'élément <gi>lb</gi> qui
+                     permet de distinguer les réelles césures en indiquant les sauts de ligne.
+                     Ainsi, le texte encodé prend la forme suivante : </p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <p>Puis, ayant refermé bruyamment la porte, ce géant se<lb/> débarrassa de son
+                        manteau, qu'il jeta sur un des derniers<lb/> bancs de l'école.</p>
+                  </egXML>
+                  <p>Enfin, l'élément <gi>hi</gi> a été utilisé pour signifier les différentes mises
+                     en valeur graphiques dans le corps du texte. L'attribut <att>rend</att> permet
+                     de décrire la nature de la mise en valeur graphique.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <head><hi rend="bold">LE COLONEL.</hi></head>
+                  </egXML>
+               </div3>
+               <div3>
+                  <head>Structurations originales</head>
+                  <p>Notre édition ne présentant pas uniquement du texte d'une nature uniforme,
+                     certains arrangements ont été proposés pour répondre à des besoins précis.</p>
+                  <div4>
+                     <head>Représenter un chant</head>
+                     <p>Notre édition comporte des passsages chantés. Pour les représenter, nous
+                        avons eu recours aux éléments suivants : <specList>
+                           <specDesc key="sp"/>
+                           <specDesc key="lg"/>
+                           <specDesc key="l"/>
+                        </specList></p>
+                     <p>Les passages chantés ont été considérés comme un discours individuel et de
+                        ce fait, ont été placés dans un élément <gi>sp</gi>. De plus, l'utilisation
+                        de l'élément <gi>sp</gi>, jointe à celle de son attribut <att>who</att>,
+                        pouvait ainsi renseigner l'identité du chanteur. Cette configuration
+                        permettait d'utiliser l'élément <gi>lg</gi> qui correspondait à notre besoin
+                        en ce qu'il désigne un groupement de lignes avec un cohérence propre
+                        (strophe, refrain, chanson). Ici, pour préciser qu'il s'agissait bien d'une
+                        chanson, l'attribut <att>type</att> a été utilisé avec comme valeur
+                           <val>song</val> désignant ainsi, une chanson. Enfin, l'élément <gi>l</gi>
+                        a été détourné de son utilisation principale à savoir le signalement d'un
+                        vers, pour désigner ici, les paroles de la chanson. Cependant, l'élément
+                           <gi>lg</gi> n'acceptant que les éléments <gi>l</gi> en éléments enfants ;
+                        son usage ici s'expliquerait par le contexte.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <sp who="#Jules_Duhamel_de_Latréaumont">
+                           <lg type="song">
+                              <l>Il fourba jusqu'au tombeau,</l>
+                              <l>Il fourba même le bourreau,</l>
+                              <l>Évitant une mort infâme ;</l>
+                              <l>Il fourba le diable en ce point,</l>
+                              <l>Qu'il crut emporter son âme...</l>
+                              <l>Mais l'affronteur n'en avait point.</l>
+                           </lg>
+                        </sp>
+                     </egXML>
+                     <!-- bien -->
+                  </div4>
+                  <div4>
+                     <head>Représenter une citation</head>
+                     <p>Pour chaque nouveau chapitre dans l'édition source, une citation est
+                        ajoutée. Pour répondre à ce besoin dans l'encodage, cinq éléments ont été
+                        nécessaires : <specList>
+                           <specDesc key="cit"/>
+                           <specDesc key="quote"/>
+                           <specDesc key="bibl"/>
+                           <specDesc key="author"/>
+                           <specDesc key="title"/>
+                        </specList></p>
+                     <p>Pour encoder cette citation, l'élément <gi>cit</gi> a été utilisé pour sa
+                        capacité à comprendre la citation en elle-même avec l'élément <gi>quote</gi>
+                        ainsi que sa référence bibliographique avec l'élément <gi>bibl</gi>.</p>
+                     <p>Dans l'élement parent <gi>bibl</gi>, deux éléments ont été ajoutés afin de
+                        préciser l'auteur de la citation ainsi que le titre de la référence dont
+                        elle provient, soit respectivement : <gi>author</gi> et <gi>title</gi>.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <cit>
+                           <quote>.....Mais la plus horrible figure ne m'eût pas<lb/>
+                              causé plus d'épouvante que celle de ce Cop-<lb/>
+                              pelius.</quote>
+                           <bibl>(<author>HOFMANN</author>.— <title><hi rend="italic">L'homme au
+                                    sable</hi></title>.)</bibl>
+                        </cit>
+                     </egXML>
+                  </div4>
+               </div3>
+            </div2>
+            <div2>
+               <head>Ajouts dans la perspective d'une future édition</head>
+               <div3>
+                  <head>Le référencement des noms de personnages et de lieux</head>
+                  <p>L'identification des noms et des lieux a été privilégiée afin de permettre la
+                     réaliser d'un index dans une future édition. Pour réaliser cette
+                     identification, l'élément <gi>standOff</gi> a été utilisé pour sa capacité à
+                     représenter des annotations extérieures au texte.</p>
+                  <div4>
+                     <head>Référencement des noms de personnages</head>
+                     <p>L'identification des noms a été réalisée à l'aide des éléments suivants : <specList>
+                           <specDesc key="listPerson"/>
+                           <specDesc key="person"/>
+                           <specDesc key="persName"/>
+                           <specDesc key="birth"/>
+                           <specDesc key="death"/>
+                           <specDesc key="note"/>
+                        </specList></p>
+                     <p>Les différents noms évoqués dans le document source ont été rassemblés dans
+                        l'élément <gi>listPerson</gi> où chacun d'entre eux a été décrit dans
+                        l'élément particulier <gi>person</gi>. Ce dernier élément a potentiellement
+                        plusieurs enfants : <gi>persName</gi>, <gi>birth</gi>, <gi>death</gi> et
+                           <gi>note</gi> qui indiquent respectivement le nom du personnage, des
+                        informations sur sa naissance, des informations sur sa mort et enfin, des
+                        informations générales sur le personnage.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <listPerson>
+                           <person xml:id="Baruch_Spinoza">
+                              <persName>Baruch Spinoza</persName>
+                              <birth when="1632-11-24">24 novembre
+                                    1632<placeName>Amsterdam</placeName></birth>
+                              <death when="1677-02-21">21 février 1677<placeName>La
+                                 Haye</placeName></death>
+                              <note>Baruch Spinoza est un philosophe néerlandais du XVIIIe siècle
+                                 dont la pensée rationaliste a eut une influence considérable sur
+                                 ses contemporains et dans l'histoire de la philosophie.</note>
+                           </person>
+                        </listPerson>
+                     </egXML>
+                     <p>Dans l'exemple situé au-dessus, on remarque l'utilisation de l'attribut
+                           <att>xml:id</att> pour l'élément <gi>person</gi>. Cet attribut permet de
+                        fournir un identifiant unique pour chaque nom qui pourra être ensuite, être
+                        référencé dans le corps du texte grâce à l'élément <gi>persName</gi> et son
+                        attribut <att>ref</att>.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
+                        rent, stupéfièrent toute l'école. <persName ref="#Franciscus_van_den_Enden">Van den Enden</persName> fit un geste<lb/>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Référencement des lieux</head>
+                     <p>L'identification des lieux a été réalisée à l'aide des éléments suivants : <specList>
+                           <specDesc key="listPlace"/>
+                           <specDesc key="place"/>
+                           <specDesc key="placeName"/>
+                           <specDesc key="note"/>
+                        </specList></p>
+                     <p>Les différents lieux évoqués dans le document source ont été rassemblés dans
+                        l'élément <gi>listPlace</gi> où chacun d'entre eux a été décrit dans
+                        l'élément particulier <gi>place</gi>. Ce dernier élément a pour éléments
+                        enfants <gi>placeName</gi> et <gi>note</gi> indiquant respectivement, le nom
+                        du lieu et des informations sur ce dernier.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <listPlace>
+                           <place xml:id="Venise">
+                              <placeName>Venise</placeName>
+                              <note>La ville de Venise est le centre de la République de Venise. La
+                                 "Sérénissime" entretient un rayonnement culturel important pendant
+                                 tout le long du XVIIIe siècle.</note>
+                           </place>
+                        </listPlace>
+                     </egXML>
+                     <p>Dans l'exemple situé au-dessus, on remarque l'utilisation de l'attribut
+                           <att>xml:id</att> pour l'élément <gi>place</gi>. Cet attribut permet de
+                        fournir un identifiant unique à chaque lieu qui pourra être ensuite être
+                        référencé dans le corps du texte grâce à l'élément <gi>placeName</gi> et son
+                        attribut <att>ref</att>.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
+                        citait la célèbre <hi rend="italic">Paccola</hi> de <placeName ref="#Venise">Venise</placeName>, qui professait le droit<lb/>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Référencement de la nature des relations entre les entités</head>
+                     <p>Nous avons choisi de représenter les liens entre les personnes et lieux
+                        évoqués dans notre édition. Pour cela, nous avons utilisé les éléments
+                        suivants : <specList>
+                           <specDesc key="listRelation"/>
+                           <specDesc key="relation"/>
+                        </specList></p>
+                     <p>L'élément <gi>listRelation</gi> permet grâce à son attribut <att>type</att>
+                        de déterminer la nature générale des relations qui vont suivre. Ces
+                        relations sont décrites dans l'élément <gi>relation</gi> qui comporte trois
+                        attributs obligatoires. Le premier <att>name</att> décrit le nom de la
+                        relation. Le second et le troisième, <att>active</att> et
+                        <att>passive</att>, identifient les entités réunies dans cette relation.</p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <listRelation type="education">
+                           <relation name="professeur" active="#Affinius_van_den_Enden"
+                              passive="#Baruch_Spinoza"/>
+                        </listRelation>
+                     </egXML>
+                     <p>Pour cet exemple de relation : Affinius van den Enden est le professeur de
+                        Baruch Spinoza.</p>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Les corrections</head>
+                  <p>Plusieurs coquilles ont été identifiées dans l'édition d'origine. Dans la
+                     perspective d'une future édition, des corrections ont été ajoutées grâce à
+                     trois éléments : <specList>
+                        <specDesc key="choice"/>
+                        <specDesc key="sic"/>
+                        <specDesc key="corr"/>
+                     </specList></p>
+                  <p>L'élément <gi>choice</gi> permet d'introduire plusieurs propositions
+                     d'encodage. Dans notre situation, l'élément <gi>choice</gi> est composé : d'un
+                     élément <gi>sic</gi> correspondant à la graphie trouvée dans le document source
+                     et d'un élément <gi>corr</gi> qui contient notre proposition de correction.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <choice>
+                        <sic>lorqsue</sic>
+                        <corr>lorsque</corr>
+                     </choice>
+                  </egXML>
+               </div3>
+            </div2>
+         </div1>
+         <div1>
+            <head>Tableau des éléments utilisés</head>
+            <schemaSpec ident="oddbyexample" start="TEI ">
+               <moduleRef key="tei"/>
+               <!-- Spécifications du module textcrit -->
+               <classRef key="att.textCritical"/>
+               <classRef key="model.rdgLike"/>
+               <classRef key="model.rdgPart"/>
+               <classSpec ident="att.textCritical" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="cause" mode="delete"/>
+                     <attDef ident="varSeq" mode="delete"/>
+                     <attDef ident="require" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!-- Spécifications du module msdescription -->
+               <classRef key="model.physDescPart"/>
+               <!-- Spécifications du module namesdates -->
+               <classRef key="att.datable.iso"/>
+               <classRef key="model.persNamePart"/>
+               <moduleRef key="namesdates"
+                  include="persName surname forename placeName country birth death listPerson listPlace listRelation person place relation"/>
+               <elementSpec ident="persName" mode="change">
+                  <gloss>Nom</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un nom d'une personne.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="full" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="surname" mode="change">
+                  <gloss>Nom de famille</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un nom de famille.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="full" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="forename" mode="change">
+                  <gloss>Prénom</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un prénom.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="full" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="placeName" mode="change">
+                  <gloss>Nom de lieux</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un nom de lieux.</desc>
+                  <attList>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="full" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="country" mode="change">
+                  <gloss>Pays</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un pays.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="birth" mode="change">
+                  <gloss>Naissance</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des informations sur la naissance d'une personne.</desc>
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <!-- L'attribut when est obligatoire pour l'élément birth. -->
+                     <attDef ident="when" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="death" mode="change">
+                  <gloss>Mort</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des informations sur la mort d'une personne.</desc>
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <!-- L'attribut when est obligatoire pour l'élément death. -->
+                     <attDef ident="when" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="listPerson" mode="change">
+                  <gloss>Liste des personnes</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient une
+                     liste d'informations sur plusieurs personnes.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="listPlace" mode="change">
+                  <gloss>Liste des lieux</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient une
+                     liste d'informations sur différents lieux.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="listRelation" mode="change">
+                  <gloss>Liste des relations</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient une
+                     liste d'informations sur les relations entre différentes entités.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <!-- L'élément listRelation doit contenir obligatoirement un attribut type dont la valeur peut être famille, education, propriete ou autre. -->
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="add" type="open">
+                           <valItem ident="famille"/>
+                           <valItem ident="education"/>
+                           <valItem ident="propriete"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="person" mode="change">
+                  <gloss>Personne</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une personne.</desc>
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="sex" mode="delete"/>
+                     <attDef ident="age" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <!-- L'identification des personnes est obligatoire. -->
+                     <attDef ident="xml:id" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="place" mode="change">
+                  <gloss>Lieu</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un lieu.</desc>
+                  <!-- L'élément place doit contenir un élément placeName et un élément note. -->
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="placeName" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="note" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <!-- L'identification des lieux est obligatoire -->
+                     <attDef ident="xml:id" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="relation" mode="change">
+                  <gloss>Relation</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des informations sur une relation entre différentes entités.</desc>
+                  <attList>
+                     <attDef ident="mutual" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <!-- L'élément relation doit obligatoiremet contenir un attribut name. -->
+                     <attDef ident="name" mode="change" usage="req"/>
+                     <!-- L'élément relation doit obligatoiremet contenir un attribut active. -->
+                     <attDef ident="active" mode="change" usage="req"/>
+                     <!-- L'élément relation doit obligatoiremet contenir un attribut passive. -->
+                     <attDef ident="passive" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <classSpec ident="att.datable.iso" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="notBefore-iso" mode="delete"/>
+                     <attDef ident="notAfter-iso" mode="delete"/>
+                     <attDef ident="from-iso" mode="delete"/>
+                     <attDef ident="to-iso" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!-- Spécifications du module dictionaries-->
+               <classRef key="att.lexicographic"/>
+               <classRef key="model.entryLike"/>
+               <classRef key="model.formPart"/>
+               <classRef key="model.gramPart"/>
+               <classRef key="model.lexicalRefinement"/>
+               <classRef key="model.morphLike"/>
+               <classRef key="model.ptrLike.form"/>
+               <moduleRef key="dictionaries" include="lang"/>
+               <elementSpec ident="lang" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <classSpec ident="att.lexicographic" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="expand" mode="delete"/>
+                     <attDef ident="split" mode="delete"/>
+                     <attDef ident="value" mode="delete"/>
+                     <attDef ident="location" mode="delete"/>
+                     <attDef ident="mergedIn" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!-- Spécifications du module tagdocs-->
+               <classRef key="att.combinable"/>
+               <classRef key="att.identified"/>
+               <classRef key="model.contentPart"/>
+               <classSpec ident="att.combinable" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="mode" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.identified" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="ident" mode="delete"/>
+                     <attDef ident="predeclare" mode="delete"/>
+                     <attDef ident="module" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.ascribed.directed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="toWhom" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.canonical" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="key" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.dimensions" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="unit" mode="delete"/>
+                     <attDef ident="quantity" mode="delete"/>
+                     <attDef ident="extent" mode="delete"/>
+                     <attDef ident="precision" mode="delete"/>
+                     <attDef ident="scope" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.damaged" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="agent" mode="delete"/>
+                     <attDef ident="degree" mode="delete"/>
+                     <attDef ident="group" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.datable.w3c" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="notBefore" mode="delete"/>
+                     <attDef ident="notAfter" mode="delete"/>
+                     <attDef ident="from" mode="delete"/>
+                     <attDef ident="to" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.datable" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="period" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.editLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="evidence" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.media" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="width" mode="delete"/>
+                     <attDef ident="height" mode="delete"/>
+                     <attDef ident="scale" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.naming" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="nymRef" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.typed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="subtype" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.pointing.group" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="domains" mode="delete"/>
+                     <attDef ident="targFunc" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.segLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="function" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.timed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="start" mode="delete"/>
+                     <attDef ident="end" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.transcriptional" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="status" mode="delete"/>
+                     <attDef ident="cause" mode="delete"/>
+                     <attDef ident="seq" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.personal" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="sort" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!-- Spécification du module core-->
+               <moduleRef key="core"
+                  include="p hi said quote cit sic corr choice address addrLine date head note pb lb cb author respStmt resp title publisher biblScope pubPlace bibl l lg sp"/>
+               <elementSpec ident="p" mode="change">
+                  <gloss>Paragraphe</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les paragraphes dans le texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="part" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="hi" mode="change">
+                  <gloss>Mise en valeur graphique</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une graphie différente par rapport au reste du texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <!-- L'attribut rend portant sur l'élément hi est olibatoire. -->
+                     <attDef ident="rend" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="said" mode="change">
+                  <gloss>Dialogue</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les dialogues dans le texte.</desc>
+                  <attList>
+                     <!-- L'attribut aloud sur l'élément said est obligatoire avec comme valeur soit true, soit false. -->
+                     <attDef ident="aloud" mode="change" usage="req">
+                        <valList mode="add" type="closed">
+                           <valItem ident="true">
+                              <gloss>Vrai</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                 >signale que le discours est prononcé à voix haute.</desc>
+                           </valItem>
+                           <valItem ident="false">
+                              <gloss>Faux</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                 >signale qu'il s'agit des pensées du personnage.</desc>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="quote" mode="change">
+                  <gloss>Citation</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une citation dont l'auteur est étranger au texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="cit" mode="change">
+                  <gloss>Citation référencée</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une citation avec une référence bibliographique.</desc>
+                  <!-- L'élément cit doit contenir un ou plusieurs élément quote ainsi que zéro ou plusieurs éléments bibl. -->
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="quote" minOccurs="1" maxOccurs="unbounded"/>
+                        <elementRef key="bibl" minOccurs="0" maxOccurs="unbounded"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="sic" mode="change">
+                  <gloss>Erreur</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une erreur dans le texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="corr" mode="change">
+                  <gloss>Correction</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     proposer une correction pour une erreur dans le texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="choice" mode="change">
+                  <gloss>Choix</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler plusieurs formes d'encodage pour le même passage dans le texte.</desc>
+                  <!-- L'élément choice doit être suivi d'un élément sic et de 1 à plusieurs éléments corr. -->
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="sic" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="corr" minOccurs="1" maxOccurs="unbounded"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="address" mode="change">
+                  <gloss>Adresse</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une adresse.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="addrLine" mode="change">
+                  <gloss>Adresse postale</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des éléments spécifiques d'une adresse postale.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="date" mode="change">
+                  <gloss>Date</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une date.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="head" mode="change">
+                  <gloss>En-tête</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler tout type d'en-tête.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="note" mode="change">
+                  <gloss>Note</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une note.</desc>
+                  <attList>
+                     <attDef ident="targetEnd" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="pb" mode="change">
+                  <gloss>Page</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler le début d'une nouvelle page.</desc>
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <!-- L'élément pb doit contenir un attribut n dont la valeur est un entier. -->
+                     <attDef ident="n" mode="change" usage="req">
+                        <datatype>
+                           <dataRef key="teidata.count"/> <!-- Bien -->
+                        </datatype>
+                     </attDef>
+                     <!-- L'élément pb doit contenir obligatoirement un attribut facs. -->
+                     <attDef ident="facs" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="lb" mode="change">
+                  <gloss>Saut de ligne</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une nouvelle ligne.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="cb" mode="change">
+                  <gloss>Colonne</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler le début d'une colonne de texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <!-- L'élément cb doit contenir un attribut n dont la valeur doit être égal à 1 ou 2. -->
+                     <attDef ident="n" mode="change" usage="req">
+                        <valList mode="change" type="closed">
+                           <valItem ident="1">
+                              <gloss>Colonne de gauche</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                 >signale que la colonne se trouve à gauche.</desc>
+                           </valItem>
+                           <valItem ident="2">
+                              <gloss>Colonne de droite</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                 >signale que la colonne se trouve à droite.</desc>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="author" mode="change">
+                  <gloss>Auteur</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un auteur.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="respStmt" mode="change">
+                  <gloss>Déclaration de responsabilité</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des informations sur la production de l'encodage.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="resp" mode="change">
+                  <gloss>Responsable de l'encodage</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler la personne en charge de l'encodage du texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="title" mode="change">
+                  <gloss>Titre</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un titre dans le texte.</desc>
+                  <attList>
+                     <attDef ident="level" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="publisher" mode="change">
+                  <gloss>Éditeur commercial</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler l'éditeur commercial de l'édition encodée.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="biblScope" mode="change">
+                  <gloss>Extension d'une référence bibliographique</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler l'extension d'une référence bibliographique (numéro de page, tome,
+                     série, etc.)</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="pubPlace" mode="change">
+                  <gloss>Lieu de publication</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler le lieu de l'édition encodée.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="bibl" mode="change">
+                  <gloss>Référence bibliographique faiblemenent structurée</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une référence bibliographique faiblement structurée.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="l" mode="change">
+                  <gloss>Vers</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un seul vers.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="part" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="lg" mode="change">
+                  <gloss>Groupe de lignes</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un groupement de lignes comme un ensemble avec une unité
+                     propre.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="org" mode="delete"/>
+                     <attDef ident="sample" mode="delete"/>
+                     <attDef ident="part" mode="delete"/>
+                     <!-- L'usage de l'attribut type est obligatoire pour l'élément lg et sa valeur est égale à song. -->
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="add" type="closed">
+                           <valItem ident="song">
+                              <gloss>Chanson</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                 >signale les paroles d'une chanson.</desc>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="sp" mode="change">
+                  <gloss>Discours</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un discours d'une seule personne dans un texte, qu'il soit en vers ou
+                     en prose.</desc>
+                  <!-- L'élément sp doit contenir un élément lg. -->
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="lg" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- Spécifications du module figures-->
+               <!-- Spécifications du module header-->
+               <moduleRef key="header"
+                  include="teiHeader fileDesc titleStmt publicationStmt distributor availability licence seriesStmt notesStmt sourceDesc biblFull profileDesc creation langUsage language"/>
+               <elementSpec ident="teiHeader" mode="change">
+                  <gloss>En-tête du document TEI</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler l'en-tête d'un document TEI.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="fileDesc" mode="change">
+                  <gloss>Description bibliographique</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une description bibliographique du document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="titleStmt" mode="change">
+                  <gloss>Déclaration du titre</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les informations concernant l'identification du document
+                     encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="publicationStmt" mode="change">
+                  <gloss>Déclaration de la publication</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les informations concernant la publication du document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="distributor" mode="change">
+                  <gloss>Distributeur</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler l'entité responsable de la distribution du document encodé.</desc>
+                  <attList>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="availability" mode="change">
+                  <gloss>Disponibilité</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les informations concernant la disponibilité du document
+                     encodé.</desc>
+                  <attList>
+                     <attDef ident="status" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="licence" mode="change">
+                  <gloss>Licence</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les informations juridiques sur le document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="seriesStmt" mode="change">
+                  <gloss>Déclaration de séries</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des informations sur la série auquel appartient le document
+                     encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="notesStmt" mode="change">
+                  <gloss>Déclaration de notes</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des notes sur la publication du document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="sourceDesc" mode="change">
+                  <gloss>Déclaration de la source</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des indications sur les origines du document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="biblFull" mode="change">
+                  <gloss>Référence bibliographique entièrement structurée</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une référence bibliographique entièrement structurée du document
+                     encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="profileDesc" mode="change">
+                  <gloss>Description du profil</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une description des aspects non-bibliographiques du document
+                     encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="creation" mode="change">
+                  <gloss>Création</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler des informations concernant la création du document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="langUsage" mode="change">
+                  <gloss>Langue utilisée</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les différentes langues utilisées dans le document encodé.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="default" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="language" mode="change">
+                  <gloss>Langue</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une langue utilisée dans le document encodé.</desc>
+                  <attList>
+                     <attDef ident="usage" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- Spécifications du module gaiji (non-utilisé) -->
+               <!-- Spécifications du module verse (non-utilisé) -->
+               <!-- Spécifications du module transcr -->
+               <classRef key="att.global.facs"/>
+               <!-- Spécifications du module linking -->
+               <moduleRef key="linking" include="seg standOff"/>
+               <elementSpec ident="seg" mode="change">
+                  <gloss>Segment</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler une segmentation dans le texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="part" mode="delete"/>
+                     <!-- L'élément seg  doit contenir un attribut type dont la valeur peut être incise. -->
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="add" type="open">
+                           <valItem ident="incise"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="standOff" mode="change">
+                  <gloss>Annotations externes</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler les données extérieures liées au texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- Spécifications du module analysis -->
+               <classRef key="att.linguistic"/>
+               <classSpec ident="att.linguistic" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="lemma" mode="delete"/>
+                     <attDef ident="lemmaRef" mode="delete"/>
+                     <attDef ident="pos" mode="delete"/>
+                     <attDef ident="msd" mode="delete"/>
+                     <attDef ident="join" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!-- Spécifications du module textstructure -->
+               <moduleRef key="textstructure" include="TEI text body div"/>
+               <elementSpec ident="TEI" mode="change">
+                  <gloss>Document TEI</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un document conforme avec les règles de la TEI.</desc>
+                  <attList>
+                     <attDef ident="version" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="text" mode="change">
+                  <gloss>Texte</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler un texte quelle que soit sa nature.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="body" mode="change">
+                  <gloss>Corps du texte</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     signaler le corps d'un texte.</desc>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="div" mode="change">
+                  <gloss>Divisions principales</gloss>
+                  <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet de
+                     structurer les différentes composantes du texte.</desc>
+                  <!-- Utilisation obligatoire de l'attribut n pour les éléments div de type chapter ou part : -->
+                  <constraintSpec scheme="isoschematron" ident="numerotation">
+                     <constraint>
+                        <s:rule context="tei:div[@type='part' or @type='chapter']">
+                           <s:assert test="@n">L'élément div de type "part" ou "chapter" doit être
+                              porteur d'un attribut n.</s:assert>
+                        </s:rule><!-- bien -->
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="org" mode="delete"/>
+                     <attDef ident="sample" mode="delete"/>
+                     <attDef ident="part" mode="delete"/>
+                     <!-- L'élément div doit contenir un attribut type dont la valeur doit être part ou chapter. -->
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="change" type="closed">
+                           <valItem ident="part">
+                              <gloss>Partie</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Ce
+                                 type signale une division de premier niveau.</desc>
+                           </valItem>
+                           <valItem ident="chapter">
+                              <gloss>Chapitre</gloss>
+                              <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Ce
+                                 type signale une division de second niveau.</desc>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+            </schemaSpec>
+         </div1>
+      </body>
+   </text>
+</TEI>
