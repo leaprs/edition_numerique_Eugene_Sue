@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/CC2_Lea_Perissier_ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="out/CC2_Lea_Perissier_ODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Latréaumont</title>
+            <author><persName><forename>Eugène</forename><surname>Sue</surname></persName></author>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre de l'évaluation finale du cours d'Édition
+                  scientifique à l'ère numérique(ENC2409)</resp>
+               <persName>
+                  <forename>Léa</forename>
+                  <surname>Perissier</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Bureaux du siècle</publisher>
+            <pubPlace><address><addrLine>Paris - rue du Croissant,16</addrLine>
+               </address>
+            </pubPlace>
+            <date when-iso="1859">1859</date>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Latréaumont</title>
+                  <author><persName><forename>Eugène</forename><surname>Sue</surname></persName></author>
+               </titleStmt>
+               <publicationStmt>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k58105109/f4.item.zoom"
+                     >BnF</distributor>
+                  <availability>
+                     <licence>Domaine public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title>Latréaumont</title>
+                  <biblScope unit="page" from="4" to="6">pp.4-6</biblScope>
+               </seriesStmt>
+               <notesStmt>
+                  <note>Texte imprimé par l'imprimerie J. Voisvenel<address>
+                        <addrLine>14 rue Chauchat, Paris</addrLine>
+                     </address>
+                  </note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">Français</language>
+         </langUsage>
+         <creation>
+            <date when-iso="1838">1838</date>
+            <country>France</country>
+            <lang xml:lang="fr"/>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="part" n="1">
+            <head>L'HOTEL DES MUSES.</head>
+            <div type="chapter" n="I">
+               <head>MAITRE AFFINIUS VAN DEN ENDEN.</head>
+               <pb n="4" facs="https://gallica.bnf.fr/ark:/12148/bpt6k58105109/f9.item"/>
+               <cb n="2"/> 
+               <!-- Début de notre extrait -->
+               <p>Elle avait alors vingt-deux ans, était grande, pâle, et sa<lb/>
+               figure, sérieuse et ferme, de même que celle de son père,<lb/>
+               <pb n="5" facs="https://gallica.bnf.fr/ark:/12148/bpt6k58105109/f10.item"/>
+               <cb n="1"/> 
+               décelait une rare puissance de volonté, jointe au calme<lb/>
+               profond et inaltérable que donne la parfaite quiétude de<lb/> 
+               l'âme ; elle était vêtue de noir, avec une fraise et un bon-<lb/>
+               net blanc qui, lui ceignant étroitement le front, laissait à<lb/>
+               peine apercevoir deux crochets de cheveux blonds ; ses<lb/>
+               sourcils, presque imperceptibles, et ses grands yeux d'un<lb/>
+               bleu clair et limpide, augmentaient encore l'expression<lb/>
+               d'impassibilité glaciale de cette physionomie ; sa taille<lb/>
+               haute et mince manquait de grâce, mais sa démarche était<lb/>
+               grave et noble ; aussi, lorsque, vêtue de sa robe noire à<lb/>
+               longs plis traînans, <persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName> parut à la porte du cabi-<lb/>
+               net, tenant sous son bras un lourd volume in-folio, cette<lb/>
+               austère figure avait un grand et imposant aspect.</p>
+               <p>Après avoir respectueusement reçu de <persName ref="#Affinius_van_den_Enden">van den Enden</persName> un<lb/>
+               baiser sur le front, sa fille lui dit : 
+               <said who="#Clara-Maria_van_den_Enden" aloud="true">— Ferai-je aujourd'hui l'enseignement politique, mon<lb/>
+               père ?</said><lb/>
+                  <said who="#Affinius_van_den_Enden" aloud="true">— Oui, mon enfant... pour deux raisons : la première<lb/>
+               est que j'ai veillé et que je suis souffrant ; la seconde<lb/>
+               est que <persName ref="#Baruch_Spinoza">Baruch</persName> se trouve ici et qu'il désire bien t'enten-<lb/>
+               dre.</said><lb/>
+                  <said who="#Clara-Maria_van_den_Enden" aloud="true">— <persName ref="#Baruch_Spinoza">Spinosa</persName> est à <placeName ref="#Amsterdam">Amsterdam</placeName> ? <seg type="incise">— dit-elle sans que sa phy-<lb/>
+               sionomie de marbre changeât d'expression ; </seg>— je le verrai<lb/>
+               donc avec plaisir, et je tâcherai de me montrer digne<lb/>
+               d'être écoutée d'un si rare et si bon esprit.</said><lb/>
+                  <said who="#Affinius_van_den_Enden" aloud="true">— Ah ! <persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName>, si tu avais voulu, pourtant !</said> — dit<lb/>
+               <persName ref="#Affinius_van_den_Enden">van den Enden</persName> avec un profond soupir qui exprimait tous<lb/>
+               ses regrets de ne pas voir sa fille mariée à <persName ref="#Baruch_Spinoza">Spinosa</persName>.</p>
+               <p>Mais un bruit de voix assez distinct annonçant au doc-<lb/>
+               teur que son école était à peu près remplie, il se leva de<lb/>
+               son fauteuil, et, s'appuyant sur le bras de sa fille, il des-<lb/>
+               cendit avec peine les marches qui conduisaient de son ca-<lb/>
+               binet à sa classe.</p>
+               <p>Éclairé par quatre fenêtres étroites et hautes percées<lb/>
+               d'un seul côté, l'intérieur de cette école offrait un tableau<lb/>
+               digne de Rembrandt. Cette longue pièce était garnie de<lb/>
+               tables et de bancs ; vers son extrémité, et à droite des mar-<lb/>
+               ches qui communiquaient au cabinet du docteur, on voyait<lb/>
+               une estrade quelque peu élevée, surmontée d'une chaise et<lb/>
+               d'une table de chêne assez précieusement sculptées.</p>
+               <p><persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName> y prit gravement place, et son père s'assit à<lb/>
+               côté d'elle en la regardant avec un certain orgueil. Presque<lb/>
+               tous les écoliers étaient, selon la mode du temps, vêtus de<lb/>
+               noir, et leurs barbes se détachaient nettement sur la blan-<lb/>
+               cheur de leur grand col à pointes rabattues, tandis que le<lb/>
+               jour, tombant du haut des fenêtres, mettait en singulier<lb/>
+               relief le profil de ces physionomies attentives qui se des-<lb/>
+               sinaient de la sorte, lumineuses et vivement colorées, sur<lb/>
+               les boiseries brunes et enfumées de l'<hi rend="bold"><placeName ref="#Hôtel_des_Muses"><hi rend="italic">Hôtel des Muses</hi></placeName>.</hi></p>
+               <p>Cette heure du jour était ordinairement consacrée, dans<lb/>
+               l'école, au développement de certaines questions politiques,<lb/>
+               qui amenaient naturellement l'examen du système des<lb/>
+               divers <choice><sic>gouvernemens</sic><corr>gouvernements</corr></choice> d'alors, sorte de thèse dans laquelle<lb/>
+               <persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName> suppléait souvent son père ; car l'esprit juste<lb/>
+               et hardi de cette jeune femme s'était merveilleusement<lb/>
+               assimilé les doctrines démocratiques du philosophe, qu'elle<lb/>
+               professait avec une rare énergie de conviction.</p>
+               <p>L'exposition d'idées aussi sérieuses, cet enseignement<lb/>
+               politique confié à une jeune femme, qui semblerait inouï<lb/>
+               de nos jours, étaient pourtant alors assez <choice><sic>fréquens</sic><corr>fréquents</corr></choice>, et on<lb/>
+               citait la célèbre <hi rend="italic">Paccola</hi> de <placeName ref="#Venise">Venise</placeName>, qui professait le droit<lb/>
+               et la théologie dans un collège de cette ville, et était d'une<lb/>
+               si excellente beauté, qu'elle parlait derrière un rideau,<lb/>
+               afin, disait-on, de ne pas donner de distractions à son<lb/>
+               auditoire.</p>
+               <p>Les gens qui remplissaient l'école de <persName ref="#Affinius_van_den_Enden">van den Enden</persName><lb/>
+               étaient de tous âges et de tous états, et, parmi eux, ainsi<lb/>
+               qu'on l'a dit, on voyait quelques étrangers attirés par le<lb/>
+               renom du professeur ou par la curiosité d'entendre sou-<lb/>
+               tenir ouvertement des principes condamnés dans presque<lb/>
+               tous les États de l'Europe.</p>
+               <p>Or, après avoir, du manche de son couteau d'ivoire,<lb/>
+               frappé deux coups bien distincts sur le bras de la chaire,<lb/>
+               <cb n="2"/>
+               pour réclamer l'attention des écoliers, <persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName> prit la<lb/>
+               parole au milieu d'un profond silence.</p>
+               <p>Le texte de la dissertation fut l'examen de cette question :<lb/>
+               <hi rend="italic">Les peuples ont-ils le droit de se rebeller lorsque la tyran-<lb/>
+               nie des souverains leur devient insupportable?</hi></p>
+               <p>Puis la déduction affirmative de ce droit fut appuyée<lb/>
+               d'un fait accompli, à savoir l'émancipation violente des<lb/>
+               sept Provinces-Unies, qui, s'étant constituées en républi-<lb/>
+               que, après une lutte opiniâtre et acharnée contre l'Espa-<lb/>
+               gne, avaient ainsi échappé à sa domination despotique et<lb/>
+               assuré courageusement l'exercice de leurs droits.</p>
+               <p>Quoique cette argumentation semblât devoir donner lieu<lb/>
+               à une improvisation chaleureuse et à des <choice><sic>mouvemens</sic><corr>mouvements</corr></choice> pas-<lb/>
+               sionnés, la parole de <persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName>, bien que sonore et<lb/>
+               ferme, demeura calme et d'une impassible égalité. Pro-<lb/>
+               fondément convaincue de la majestueuse autorité des<lb/>
+               maximes qu'elle professait, elle dédaignait sans doute la<lb/>
+               ressource, pourtant si puissante, des inflexions oratoires,<lb/>
+               qui aurait peut-être aussi animé son langage aux dépens<lb/>
+               de son allure imposante et de sa gravité solennelle.</p>
+               <p>Parmi les auditeurs, un surtout suivait avec une atten-<lb/>
+               tion singulière, et pour ainsi dire inquiète, les différentes<lb/>
+               périodes du discours de la jeune femme.</p>
+               <p>Placé tout proche de la chaire, il échangeait souvent un<lb/>
+               regard humide de tendresse ou brillant d'admiration avec<lb/>
+               <persName ref="#Affinius_van_den_Enden">van den Enden</persName>, lorsque sa fille rencontrait quelque pensée<lb/>
+               brûlante de patriotisme, qui, tombant glacée de sa lèvre<lb/>
+               de marbre, ne perdait pourtant rien de sa puissance... non<lb/>
+               plus qu'une lave bouillante qui devient airain en se re-<lb/>
+               froidissant.</p>
+               <p>L'homme dont on parle était vêtu de gros drap brun ;<lb/>
+               son col était uni, et ses <choice><sic>vêtemens</sic><corr>vêtements</corr></choice> annonçaient une entière<lb/>
+               insouciance de la toilette. Maigre et de petite taille, quoi-<lb/>
+               qu'il eût à peine trente ans, il était déjà chauve, et des<lb/>
+               rides prématurées sillonnaient son grand front ; son teint<lb/>
+               était olivâtre comme celui de presque tous les juifs ; son<lb/>
+               nez, fortement arqué, se recourbait en bec d'aigle, tandis<lb/>
+               que ses joues creuses, à pommettes saillantes et légère-<lb/>
+               ment colorées, révélaient une maladie mortelle dont il de-<lb/>
+               vait mourir jeune encore. Somme toute, cette physionomie<lb/>
+               souffrante et distraite, cette contenance embarrassée, n'an-<lb/>
+               nonçaient en rien l'homme de génie éminent, le puissant<lb/>
+               chef de secte... car cet homme était <hi rend="italic"><persName ref="#Baruch_Spinoza">Baruch Spinosa</persName>!</hi></p>
+               <p><persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName> continuait donc gravement son discours,<lb/>
+               <choice><sic>lorqsue</sic><corr>lorsque</corr></choice> le religieux et profond silence d'admiration qui<lb/>
+               régnait dans l'auditoire fut tout à coup interrompu par un<lb/>
+               chant grossier qui retentit derrière la porte de l'école, et<lb/>
+               on entendit une voix tonnante chanter en français ce re-<lb/>
+               frain d'une vieille chanson de la Fronde:</p>
+               <sp who="#Jules_Duhamel_de_Latréaumont">
+                  <lg type="song">
+                     <l>Il fourba jusqu'au tombeau,</l>
+                     <l>Il fourba même le bourreau,</l>
+                     <l>Évitant une mort infâme ;</l>
+                     <l>Il fourba le diable en ce point,</l>
+                     <l>Qu'il crut emporter son âme...</l>
+                     <l>Mais l'affronteur n'en avait point.</l>
+                  </lg>
+               </sp>
+               <p>Ce chant et ces paroles, que plusieurs écoliers compri-<lb/>
+               rent, stupéfièrent toute l'école. <persName ref="#Franciscus_van_den_Enden">Van den Enden</persName> fit un geste<lb/>
+               de surprise, et sa fille ne put retenir un impérieux mou-<lb/>
+               vement d'indignation.</p>
+               <p>Alors un nouveau personnage entra dans l'<placeName ref="#Hôtel_des_Muses"><hi rend="italic">Hôtel des<lb/>
+               Muses</hi></placeName>.</p>
+            </div>
+            <div type="chapter" n="II">
+               <pb n="6" facs="https://gallica.bnf.fr/ark:/12148/bpt6k58105109/f11.item"/>
+               <cb n="1"/>
+               <head><hi rend="bold">LE COLONEL.</hi></head>
+               <cit>
+                  <quote>.....Mais la plus horrible figure ne m'eût pas<lb/>
+                        causé plus d'épouvante que celle de ce Cop-<lb/>
+                        pelius.</quote>
+                  <bibl>(<author>HOFMANN</author>.— <title><hi rend="italic">L'homme au sable</hi></title>.)</bibl>
+               </cit> 
+               <p>La porte s'ouvrit donc, et on vit entrer un homme d'une<lb/>
+               taille colossale, soigneusement enveloppé d'un manteau<lb/>
+               tout couvert de neige. Ce personnage, sans cesser de chan-<lb/>
+               ter, répéta pourtant ce refrain, d'une voix moins éclatante<lb/>
+               bien que fort assurée :</p>
+               <sp who="#Jules_Duhamel_de_Latréaumont">
+                  <lg type="song">
+                     <l>Évitant une mort infâme ;</l>
+                     <l>Il fourba le diable en ce point,</l>
+                     <l>Qu'il pensait emporter son âme...</l>
+                     <l>Mais l'affronteur n'en avait point.</l>
+                  </lg>
+               </sp>
+               <p>Puis, ayant refermé bruyamment la porte, ce géant se<lb/>
+               débarrassa de son manteau, qu'il jeta sur un des derniers<lb/>
+               bancs de l'école.</p>
+               <p>Alors, toujours fredonnant, il ôta de dessus sa tête un<lb/>
+               feutre gris à plumes rouges, dont il secoua aussi la neige<lb/>
+               çà et là, au risque d'en couvrir les écoliers placés près de<lb/>
+               lui.</p>
+               <p>Cet étranger, qui avait plus de six pieds de haut, parais-<lb/>
+               sait âgé de quarante ans environ, et son costume, assez<lb/>
+               misérable d'ailleurs, annonçait l'homme de guerre. Ses ro-<lb/>
+               bustes et larges épaules, ainsi que sa vaste poitrine par-<lb/>
+               faitement en harmonie avee sa taille énorme, se dessi-<lb/>
+               naient puissamment sous un grand justaucorps de buffle<lb/>
+               que garnissaient encore quelques <choice><sic>passemens</sic><corr>passements</corr></choice> d'or ternis.<lb/>
+               Un haut-de-chausses de gros drap écarlate, de lourdes<lb/>
+               bottes de basane à éperons rouillés, un col d'une blan-<lb/>
+               cheur douteuse, une écharpe fanée de tabis orange, qui<lb/>
+               devait avoir été richement brodée d'argent, si l'on en ju-<lb/>
+               geait du moins par les débris éraillés de son ancienne<lb/>
+               splendeur ; par-dessus tout cela, une ample casaque de<lb/>
+               route, en étoffe couleur de musc, que le fourreau noir<lb/>
+               d'une lourde épée, à poignée de fer, relevait par le bas ;<lb/>
+               enfin, de vieux gants de peau de daim qui, couvrant pres-<lb/>
+               que entièrement ses bras musculeux, lui montaient au-<lb/>
+               dessus du coude : tel était l'accoutrement de ce person-<lb/>
+               nage.</p>
+               <p>Sa figure, qui offrait un type remarquable d'audace et<lb/>
+               d'effronterie, révélait surtout cette insolence d'athlète, cette<lb/>
+               confiance brutale et railleuse donnée par la conscience<lb/>
+               d'une force physique herculéenne et d'un courage à toute<lb/>
+               épreuve. Ce colosse ne portait pas de perruque, contre la<lb/>
+               mode d'alors, et ses cheveux noirs, courts, épais et rudes,<lb/>
+               blanchissaient légèrement sur ses tempes couleur de bri-<lb/>
+               que, dont la moindre émotion gonflait outre mesure les<lb/>
+               veines saillantes et bleuâtres. On voyait que ses traits<lb/>
+               avaient dû être assez beaux, mais d'une beauté plus mâle<lb/>
+               qu'élégante ; sa moustache et ses sourcils de jais noble-<lb/>
+               ment arqués, tranchaient vigoureusement sur son teint<lb/>
+               couperosé, que le froid avait encore avivé ; une arête fer-<lb/>
+               me et osseuse accusait les hardis contours de son nez aqui-<lb/>
+               lin, surmonté d'un front haut, proéminent, mais bruni<lb/>
+               par le hâle, et empourpré çà et là par les suites de l'intem-<lb/>
+               pérance ; enfin ses yeux gris à fleur de tête, <choice><sic>brillans</sic><corr>brillants</corr></choice>, bien<lb/>
+               ouverts, et dont la prunelle était si grande qu'on voyait<lb/>
+               à peine le blanc de l'oeil, avaient une telle expression d'ar-<lb/>
+               rogance et de dédain, que les auditeurs de <persName ref="#Clara-Maria_van_den_Enden">Clara-Maria</persName>, ir-<lb/>
+               rités des airs <choice><sic>insolens</sic><corr>insolents</corr></choice> de ce cavalier, commençaient déjà<lb/>
+               de murmurer sourdement.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+   <standOff>
+      <listPlace>
+         <place xml:id="Amsterdam">
+            <placeName>Amsterdam</placeName>
+            <note>Amsterdam est une ville des Provinces-Unies. Au XVIIIe siècle, les Provinces-Unies
+               sont un foyer culturel important où de nombreux philosophes travaillent.</note>
+         </place>
+         <place xml:id="Hôtel_des_Muses">
+            <placeName>Hôtel des Muses</placeName>
+            <note>Il s'agit d'une école de philosophie, de théologie et de médecine créée par Affinius
+               van den Enden.</note>
+         </place>
+         <place xml:id="Venise">
+            <placeName>Venise</placeName>
+            <note>La ville de Venise est le centre de la République de Venise. La "Sérénissime"
+               entretient un rayonnement culturel important pendant tout le long du XVIIIe siècle.</note>
+         </place>
+      </listPlace>
+      <listPerson>
+         <person xml:id="Clara-Maria_van_den_Enden">
+            <persName>Clara-Maria van den Enden</persName>
+            <!-- Les dates de naissance et de mort de Clara-Maria van den Enden ne sont pas connues.-->
+            <note>Fille ainée d'Affinius van den Enden, elle enseigne à l'école de son père.</note>
+         </person>
+         <person xml:id="Affinius_van_den_Enden">
+            <persName>Affinius van den Enden</persName>
+            <birth when="1602-02-05">5 février 1602<placeName>Anvers</placeName></birth>
+            <death when="1674-11-27">27 novembre 1674<placeName>Paris</placeName></death>
+            <note>Fransciscus van den Enden, dit Affinius de son nom latinisé, est un philosophe
+               néerlandais défendant l'athéisme et une pensée égalitariste. Il participe au complot de
+               Latréaumont en 1674 à l'encontre du roi de France Louis XIV.</note>
+         </person>
+         <person xml:id="Baruch_Spinoza">
+            <persName>Baruch Spinoza</persName>
+            <birth when="1632-11-24">24 novembre 1632<placeName>Amsterdam</placeName></birth>
+            <death when="1677-02-21">21 février 1677<placeName>La Haye</placeName></death>
+            <note>Baruch Spinoza est un philosophe néerlandais du XVIIIe siècle dont la pensée
+               rationaliste a eut une influence considérable sur ses contemporains et dans l'histoire
+               de la philosophie.</note>
+         </person>
+         <person xml:id="Jules_Duhamel_de_Latréaumont">
+            <persName>Jules Duhamel de Latréaumont</persName>
+            <!-- Étant un personnage fictif, ses dates de naissance et de mort ne sont pas communiquées. -->
+            <note>Ce colonel est un noble français originaire de Normandie. Ce personnage, le seul
+               fictif ici, serait inspiré de la vie de Gilles du Hamel de Latréaumont (1627-1674), noble à
+               l'origine d'un complot à l'encontre du roi du France Louis XIV en 1674.</note>
+         </person>
+      </listPerson>
+      <listRelation type="famille">
+         <relation name="parent" active="#Affinius_van_den_Enden" passive="#Clara-Maria_van_den_Enden"/>
+      </listRelation>
+      <listRelation type="education">
+         <relation name="professeur" active="#Affinius_van_den_Enden" passive="#Baruch_Spinoza"/>
+      </listRelation>
+      <listRelation type="propriete">
+         <relation name="proprietaire" active="#Affinius_van_den_Enden" passive="#Hôtel_des_Muses"/>
+      </listRelation>
+   </standOff>
+</TEI>
