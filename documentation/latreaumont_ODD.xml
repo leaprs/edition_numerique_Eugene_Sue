@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Très bonne ODD, bonne documentation, bonne personnalisation -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"
    xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
    <teiHeader>
@@ -77,7 +76,6 @@
             <p>En somme, diverses exploitations de cette édition sont possible considérant ses
                qualités historiques et la perspective d'une rédécouverte d'un ouvrage presque oublié
                aujourd'hui par le public.</p>
-            <!-- Bonne exposition des perspectives de réutilisation -->
             <div2>
                <head>Structuration du fichier XML</head>
                <p>La structuration de notre édition suit les règles de la TEI en comportant une
@@ -250,7 +248,6 @@
                            </lg>
                         </sp>
                      </egXML>
-                     <!-- bien -->
                   </div4>
                   <div4>
                      <head>Représenter une citation</head>
