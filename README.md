@@ -7,7 +7,7 @@ Ce projet d'édition numérique d'un extrait du roman feuilleton _Latréaumont_ 
 # Structure du dépôt
 
 ```
-encodage_EAD
+edition_numerique_Eugene_Sue
     ├── documentation
     │      ├── lautreaumont_ODD.html                    --> Documentation HTML
     │      ├── lautreaumont_ODD.rng                     --> Fichier Relax NG lié à l'encodage
